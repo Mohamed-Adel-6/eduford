@@ -141,6 +141,7 @@ button:hover {
 /* start courses */
 .courses .boxes .box{
   background-color:#fff3f1 ;
+  transition:.3s
 }
 .courses .boxes .box:hover{
   box-shadow: 0 0   10px #ddd;
