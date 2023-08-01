@@ -1,0 +1,86 @@
+:root {
+  --color-red: #dc3545;
+}
+.content-blog img{
+  border-radius: 5px;
+}
+.content-blog h2{
+  padding: 5px 10px;
+  background-color: var(--color-red);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.content-blog .info{
+  padding: 7px 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.content-blog .info p{
+  margin: 0;
+  font-size: 17px;
+  font-weight: bold;
+  z-index: 2;
+  cursor: context-menu;
+  transition: .3s;
+}
+.content-blog .info::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #dc3545;
+  z-index: 1;
+  left: -100%;
+  top:0;
+  transition: .3s;
+}
+.content-blog .info:hover::before{
+  left: 0;
+}
+.content-blog .info:hover p {
+  color: white;
+}
+.form{
+  border:  3px solid #eee;
+  text-align: center;
+}
+.form input,
+.form textarea{
+  border: none;
+  background-color: #eee;
+  padding: 7px 10px;
+  display: block; 
+  margin: 20px 0; 
+  width: 100%;
+}
+.form input:focus,
+.form textarea:focus{
+  border: none;
+  outline: none;
+}
+.form textarea{
+  height: 200px;
+  resize: none;
+}
+.form .button {
+  margin:10px auto;
+  display: block;
+}
+  .form .button a{
+  color: var(--color-red);
+  transition: .3s;
+}
+.form .button::before,
+.form .button::after{
+  background-color: var(--color-red);
+  width: 25px;
+}
+.form .button:hover a{
+  color: white;
+}

@@ -1,0 +1,14 @@
+:root {
+  --color-red: #dc3545;
+}
+.map iframe{
+  width: 100%;
+}
+.info p svg{
+  color: var(--color-red);
+  margin-right: 10px;
+  font-size: 20px;
+}
+.content-contact .form{
+  border: none;
+}
