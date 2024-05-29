@@ -6,6 +6,12 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar{
+  width: 13px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--color-red);
+}
 body {
   font-family: 'Cairo', sans-serif;
   font-family: 'Open Sans', sans-serif;
